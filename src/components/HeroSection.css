@@ -1,10 +1,14 @@
 .hero-section {
     position: relative;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
 .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -12,25 +16,31 @@
 
 .hero-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-text-block {
-    color: white;
+    right: 5%;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #fff;
     text-align: center;
 }
 
-.hero-text-block h1 {
-    font-size: 5rem;
-    letter-spacing: 3px;
+.hero-text-block {
+    display: inline-block;
+    text-align: right;
 }
 
-.hero-text-block h2 {
+.hero-content h1 {
+    font-size: 5rem;
+    margin: 0;
+    color: var(--light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
     font-size: 2.5rem;
+    margin: 0;
+    color: var(--light);
+    letter-spacing: 1px;
+
 }

@@ -1,0 +1,122 @@
+.navbar a,
+.navbar button,
+.dropdown-content a {
+    min-height: 44px;
+    line-height: 44px;
+    padding: 10px 15px;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px 50px;
+    color: rgb(0, 34, 66);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    max-height: 100px;
+    top: 0;
+}
+
+.navbar a,
+.navbar button {
+    background: none;
+    border: none;
+    color: rgb(15, 10, 66);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 15px;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar.active {
+    background-color: white;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Styling */
+.navbar-brand img {
+    height: 80px;
+    width: 120px;
+    margin-top: -20px;
+    margin-left: -50px;
+}
+
+
+/* Scroll Effect */
+.navbar.scrolled {
+    background-color: #ffffff;
+}
+
+.navbar.scrolled a,
+.navbar.scrolled button {
+    color: white;
+}
+
+/* Navbar Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-right .dropdown,
+.navbar-right button {
+    margin-left: 15px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    z-index: 1;
+    overflow: hidden;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Custom Button Styles */
+
+.menu-btn {
+    background-color: transparent;
+    color: #0b032b;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: larger;
+    z-index: 1100;
+    position: absolute;
+
+}
