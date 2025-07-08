@@ -1,0 +1,127 @@
+.about-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px 40px;
+    width: 95%;
+    text-align: justify;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.123);
+    position: relative;
+    margin: 40px auto;
+}
+
+/* Paragraph */
+.about-para {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.about-para .highlight {
+    font-weight: bold;
+    color: #006400;
+    font-size: 1.25rem;
+}
+
+/* CTA Button */
+.about-floating-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.learn-more-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #006400;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    height: 45px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.learn-more-link:hover {
+    background-color: #008000;
+    transform: scale(1.05);
+}
+
+.learn-more-link .nav-icon {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-para {
+        font-size: 1.1rem;
+    }
+
+    .learn-more-link {
+        height: 42px;
+        width: 42px;
+    }
+
+    .about-floating-btn {
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-para {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .learn-more-link {
+        height: 40px;
+        width: 40px;
+    }
+
+    .about-floating-btn {
+        right: 60px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-para {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .learn-more-link {
+        width: 40px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .learn-more-link .nav-icon {
+        font-size: 1rem;
+    }
+
+    .learn-more-link:hover {
+        width: 130px;
+    }
+
+    .about-floating-btn {
+        right: 20px;
+        bottom: 15px;
+    }
+}
+
+@media (hover: none) {
+    .learn-more-link:hover .learn-text {
+        opacity: 1;
+    }
+
+    .learn-more-link:hover {
+        width: 140px;
+    }
+}
