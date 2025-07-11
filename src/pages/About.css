@@ -1,17 +1,126 @@
-.about-page {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: 50px auto;
+.about-container {
+  padding: 60px 40px;
+  background: #f5f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  width: 85%;
+  margin: 100px auto;
+}
+
+.about-section h1 {
+  color: #095c25;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.mission,
+.vision {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mission h2,
+.vision h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.vision ul {
+  padding-left: 20px;
+}
+
+.core-competencies {
+  margin-top: 60px;
+}
+
+.core-competencies h2 {
+  color: #095c25;
+  margin-bottom: 30px;
+}
+
+.competency-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border-top: 4px solid #00a6ff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 166, 255, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 0;
+  color: #007bff;
+}
+
+.card:hover ul {
+  opacity: 1;
+  max-height: 500px;
+  /* Large enough to fit your items */
+}
+
+.card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.journey {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.journey h2 {
+  color: #095c25;
+  margin-bottom: 30px;
+}
+
+.journey img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
   }
-  
-  .about-page h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+
+  .competency-cards {
+    flex-direction: column;
   }
-  
-  .about-page p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
+}

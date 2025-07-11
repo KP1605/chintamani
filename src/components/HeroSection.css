@@ -35,7 +35,7 @@
     color: var(--light);
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-family: 'Orbitron', serif!important;
+    font-family: 'Orbitron', serif !important;
     margin-top: 100px;
 }
 
@@ -45,6 +45,6 @@
     color: var(--light);
     letter-spacing: 1px;
     margin-top: -10px;
-    font-family: 'Poiret One',cursive;
-    font-weight: 900!important;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900 !important;
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import './OfferingsSection.css'; // We will create this CSS file next
 
@@ -13,7 +14,7 @@ const OfferingsSection = () => {
             <li>CSS</li>
             <li>Transformer</li>
           </ul>
-          <a href="/projects" className="view-more-btn">View More</a>
+          <a href="/products" className="view-more-btn">View More</a>
         </div>
         <div className="offering-card">
           <h5>EPC Project</h5>
@@ -22,7 +23,7 @@ const OfferingsSection = () => {
             <li>Substation up to 66KW</li>
             <li>Transmission Line</li>
           </ul>
-          <a href="/projects" className="view-more-btn">View More</a>
+          <a href="/products" className="view-more-btn">View More</a>
         </div>
         <div className="offering-card">
           <h5>Operation & Maintenance</h5>
@@ -31,7 +32,7 @@ const OfferingsSection = () => {
             <li>LT Infrastructures</li>
             <li>RE Power Projects</li>
           </ul>
-          <a href="/projects" className="view-more-btn">View More</a>
+          <a href="/products" className="view-more-btn">View More</a>
         </div>
         <div className="offering-card">
           <h5>FACATE Solutions</h5>
@@ -41,7 +42,7 @@ const OfferingsSection = () => {
             <li>Solar Glass Roof</li>
             <li>FACATE Lighting</li>
           </ul>
-          <a href="/projects" className="view-more-btn">View More</a>
+          <a href="/products" className="view-more-btn">View More</a>
         </div>
       </div>
     </section>
@@ -49,3 +50,4 @@ const OfferingsSection = () => {
 };
 
 export default OfferingsSection;
+<Link to="/products" className="view-more-btn">View More</Link>

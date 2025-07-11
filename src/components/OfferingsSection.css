@@ -33,17 +33,23 @@
 .cards-container {
     display: flex;
     transition: transform 0.5s ease;
-    flex-wrap: nowrap; /* Allow cards to move to next line if needed */
-    justify-content: center; /* Center the group horizontally */
+    flex-wrap: nowrap;
+    /* Allow cards to move to next line if needed */
+    justify-content: center;
+    /* Center the group horizontally */
     overflow-x: auto;
     padding-bottom: 10px;
 }
+
 .cards-container::-webkit-scrollbar {
     display: none;
 }
+
 .cards-container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 
@@ -51,7 +57,7 @@
 .offering-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* push content to top and button to bottom */
+    justify-content: space-between;
     flex: 0 0 300px;
     margin: 10px 10px;
     background: linear-gradient(135deg, #ffffff, #e0ecff);
@@ -59,7 +65,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.212);
     padding: 10px 10px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    height: 300px; /* Increase a little if needed */
+    height: 300px;
 }
 
 .offering-card h5 {
@@ -90,11 +96,12 @@
     border-radius: 5px;
     font-size: 0.95rem;
     transition: background-color 0.3s, transform 0.3s;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     margin-top: 10px;
 }
 
 .view-more-btn:hover {
     background-color: #006400;
     transform: translateY(-2px);
+    color: antiquewhite;
 }

@@ -1,81 +1,57 @@
 .why-section {
-    padding: 60px 20px;
-    background: #f9f9f9;
-    text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.why-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: auto;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.highlight {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.why-card {
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background: white;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(2, 2, 2, 0.116);
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.why-card h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  text-align: center;
+}
+
+@keyframes spinBorder {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .why-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .light {
-    font-weight: 300;
-  }
-  
-  .highlight {
-    color: var(--secondary-color);
-    font-weight: 700;
-  }
-  
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    justify-items: center;
-  }
-  
-  .why-card {
-    position: relative;
-    padding: 30px 20px;
-    border-radius: 15px;
-    background: white;
-    z-index: 0;
-    overflow: hidden;
-  }
-  
-  .why-card::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: conic-gradient(green 0deg, transparent 90deg, green 180deg, transparent 270deg, green 360deg);
-    border-radius: 15px;
-    padding: 2px;
-    z-index: -1;
-    animation: spinBorder 4s linear infinite;
-  }
-  
-  .why-card::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    background: white;
-    border-radius: 13px; /* Slightly smaller than ::before */
-    z-index: 1;
-  }
-  
-  
-  .why-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  }
-  
-  .why-card h3 {
-    font-size: 1.2rem;
-    color: #003366;
-  }
-  @keyframes spinBorder {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
