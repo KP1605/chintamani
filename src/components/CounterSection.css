@@ -29,7 +29,7 @@
     justify-content: center;
 }
 
-.counter-box:hover{
+.counter-box:hover {
     transform: scale(1.08);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
@@ -37,7 +37,6 @@
 .counter-icon {
     font-size: 36px;
     color: #003366;
-    /* dark blue icon */
     margin-bottom: 10px;
 }
 
@@ -52,7 +51,7 @@
 
 .counter-box p {
     font-size: 1.1rem;
-    color: #006400;
+    color: var(--secondary-color);
     margin: 0;
     font-weight: 600;
     letter-spacing: 1px;

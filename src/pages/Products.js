@@ -12,7 +12,7 @@ const Products = () => {
                     <li><a href="#ht-infra"><i className="fas fa-bolt"></i> HT Infrastructures</a></li>
                     <li><a href="#epc-project"><i className="fas fa-project-diagram"></i> EPC Project</a></li>
                     <li><a href="#operation-maintenance"><i className="fas fa-tools"></i> Operation & Maintenance</a></li>
-                    <li><a href="#facate-solutions"><i className="fas fa-lightbulb"></i> FACATE Solutions</a></li>
+                    <li><a href="#facade-solutions"><i className="fas fa-lightbulb"></i> FACADE Solutions</a></li>
                 </ul>
             </aside>
 
@@ -117,10 +117,10 @@ const Products = () => {
                     </ol>
                 </section>
 
-                <section id="facate-solutions" className="product-section">
-                    <h2>FACATE Solutions</h2>
+                <section id="facade-solutions" className="product-section">
+                    <h2>FACADE Solutions</h2>
                     <h3>Introduction</h3>
-                    <p>Innovative solutions under our FACATE umbrella integrating smart technologies and automation to enhance operational efficiency.</p>
+                    <p>Innovative solutions under our FACADE umbrella integrating smart technologies and automation to enhance operational efficiency.</p>
                     <h3>Approach</h3>
                     <p>Integration of smart technologies, automation retrofits, and custom control systems.</p>
                     <h3>Offerings</h3>

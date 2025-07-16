@@ -35,12 +35,12 @@ const OfferingsSection = () => {
           <a href="/products" className="view-more-btn">View More</a>
         </div>
         <div className="offering-card">
-          <h5>FACATE Solutions</h5>
+          <h5>FACADE Solutions</h5>
           <ul>
-            <li>Solar Glass FACATE</li>
+            <li>Solar Glass FACADE</li>
             <li>Vertical Wall</li>
             <li>Solar Glass Roof</li>
-            <li>FACATE Lighting</li>
+            <li>FACADE Lighting</li>
           </ul>
           <a href="/products" className="view-more-btn">View More</a>
         </div>

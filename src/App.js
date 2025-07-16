@@ -8,12 +8,14 @@ import Associates from './pages/Associates';
 import Career from './pages/Career';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Footer from './components/Footer';
 // ... your other pages
 
 function App() {
   return (
     <Router>
-      <Navbar /> {/* Your navbar should always stay on top */}
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,6 +27,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         {/* add others as needed */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
