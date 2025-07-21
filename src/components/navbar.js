@@ -14,7 +14,7 @@ function Navbar() {
                 <a href="/associates" class="navbar-btn">Associates</a>
 
                 <div class="dropdown">
-                    <a href="about.html" class="about-btn">Contact</a>
+                    <a href="/contact" class="navbar-btn">Contact</a>
                     <div class="dropdown-content">
                         <a href="/career">Career</a>
                         <a href="/corporate-communication">Corporate Communication</a>

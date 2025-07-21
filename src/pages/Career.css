@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #060877;
+    --secondary-color: #095c25;
+    --light-color: #ffffff;
+    --background-color: #f8f9fa;
+    --dark-color: #333333;
+    --primary: #007bff;
+    --secondary: #2e2e2b;
+    --dark: #091E3E;
+    --primary-green: #1e6f5c;
+    --secondary-green: #43b28b;
+    --accent-color: #8ff0c1;
+    --text-dark: #184438;
+    --text-soft: #3a5f52;
+    --bg-light: #f5fcfb;
+    --card-bg: #ffffff;
+    --border-light: rgba(0, 0, 0, 0.05);
+    --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.career-page {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f8fa;
+    margin: 80px auto;
+}
+
+.career-header {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-green));
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.career-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.career-header p {
+    font-size: 1.2rem;
+}
+
+/* --- Current Openings --- */
+.openings-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003844;
+}
+
+.openings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.career-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.career-card h3 {
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.career-card p {
+    margin: 6px 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.apply-btn {
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #007f89;
+}
+
+/* --- Form Section --- */
+.application-form-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.application-form-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary-green);
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Floating Label Styles */
+.floating-label {
+    position: relative;
+}
+
+.floating-label input,
+.floating-label textarea {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+}
+
+.floating-label label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    color: #888;
+    transition: all 0.2s ease;
+    background-color: white;
+    padding: 0 4px;
+    pointer-events: none;
+}
+
+.floating-label input:focus+label,
+.floating-label input:not(:placeholder-shown)+label,
+.floating-label textarea:focus+label,
+.floating-label textarea:not(:placeholder-shown)+label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+/* Resume Upload */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input[type="file"] {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.file-preview {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Submit Button */
+.application-form button {
+    background-color: #005f73;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.application-form button:hover {
+    background-color: #004f5f;
+}
+
+/* Progress Bar */
+.progress-bar {
+    margin-top: 10px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 100%;
+    height: 100%;
+    background-color: #0a9396;
+    animation: progressAnim 2s linear forwards;
+}
+
+@keyframes progressAnim {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .career-card {
+        width: 100%;
+    }
+
+    .application-form-section {
+        padding: 20px;
+    }
+}

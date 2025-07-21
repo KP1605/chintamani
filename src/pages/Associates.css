@@ -1,0 +1,48 @@
+.associates-page {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a8f2e;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.associates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.associate-card {
+    width: 150px;
+    text-align: center;
+}
+
+.associate-logo {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.associate-name {
+    font-size: 16px;
+    color: #333;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

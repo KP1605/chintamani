@@ -1,41 +1,41 @@
-/* Base container styling */
-.container {
-    display: flex;
-    min-height: 100vh;
-    background: #f5f9fc;
-    margin: 80px auto;
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Sidebar styling */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    background: var(--text-dark);
-    color: white;
-    padding: 30px 20px;
+/* Scrollable Flex Layout */
+.container {
+    display: flex;
     height: 100vh;
-    overflow-y: auto;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
     margin-top: 80px;
 }
 
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 30px 20px;
+    overflow-y: auto;
+}
 
 .sidebar h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 30px;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff44;
+    border-bottom: 2px solid #ffffff33;
     padding-bottom: 10px;
-    font-family: "Poppins";
-    letter-spacing: 3px;
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: 700;
 }
 
 #product-nav {
     list-style: none;
-    padding: 0;
 }
 
 #product-nav li {
@@ -44,11 +44,11 @@
 
 #product-nav a {
     text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
+    color: #fff;
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #product-nav a i {
@@ -56,85 +56,102 @@
 }
 
 #product-nav a:hover {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: translateX(1px);
-    padding: 2px 10px;
-    border-radius: 50px;
     background: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 30px;
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: all 0.5s ease;
+    transition: 0.3s ease;
 }
 
-
-/* Main content styling */
+/* Main Content */
 .main-content {
     flex: 1;
+    overflow-y: auto;
     padding: 40px;
-    margin-left: 250px;
+    background: #f8fafc;
+    scroll-behavior: smooth;
 }
 
+/* Product Section Cards */
 .product-section {
-    background: white;
-    border-radius: 12px;
+    background-color: #fff;
     padding: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
 }
 
 .product-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 166, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 .product-section h2 {
-    color: #095c25;
+    color: var(--primary-color);
     margin-bottom: 20px;
     position: relative;
+    font-size: 1.5rem;
     letter-spacing: 1px;
 }
 
 .product-section h2::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 60px;
     height: 4px;
-    background: var(--primary-color);
-    margin-top: 5px;
+    background: #00c18c;
     border-radius: 2px;
-    animation: slideIn 1s ease forwards;
+    margin-top: 8px;
 }
 
 .product-section h3 {
-    color: var(--primary-color);
-    margin-top: 25px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    font-weight: 600;
 }
 
 .product-section p,
-.product-section ul {
+.product-section ul,
+.product-section ol {
     color: #333;
+    font-size: 0.95rem;
     line-height: 1.6;
+    margin-top: 10px;
     text-align: justify;
 }
 
-.product-section ul {
-    list-style: disc inside;
-    padding-left: 10px;
+.product-section ul,
+.product-section ol {
+    margin-left: 20px;
 }
 
-@keyframes slideIn {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 50px;
-    }
+.product-section li {
+    margin-bottom: 10px;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
+/* Scrollbar Styling (Webkit browsers) */
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
@@ -143,10 +160,12 @@
         width: 100%;
         height: auto;
         position: relative;
+        padding: 20px;
     }
 
     .main-content {
         padding: 20px;
+        margin-left: 0;
     }
 
     #product-nav a {

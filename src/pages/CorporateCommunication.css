@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #060877;
+    --secondary-color: #095c25;
+    --light-color: #ffffff;
+    --background-color: #f8f9fa;
+    --dark-color: #333333;
+    --primary-green: #1e6f5c;
+    --secondary-green: #43b28b;
+    --accent-color: #8ff0c1;
+    --text-dark: #184438;
+    --text-soft: #3a5f52;
+    --bg-light: #f5fcfb;
+    --card-bg: #ffffff;
+    --border-light: rgba(0, 0, 0, 0.05);
+    --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.corporate-container {
+    padding: 60px 20px;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.corporate-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.corporate-header h1 {
+    font-size: 38px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.corporate-header p {
+    font-size: 18px;
+    color: var(--text-soft);
+}
+
+.corporate-section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.2s ease;
+}
+
+.corporate-section:hover {
+    transform: translateY(-3px);
+}
+
+.corporate-section h2 {
+    color: var(--primary-green);
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.corporate-section p {
+    line-height: 1.6;
+    color: var(--text-soft);
+    font-size: 16px;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-green);
+}
+
+/* Highlights list */
+.highlights ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.highlights ul li {
+    background: var(--bg-light);
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-left: 4px solid var(--primary-green);
+    color: var(--text-soft);
+    border-radius: 6px;
+    box-shadow: var(--shadow-light);
+}
+
+/* Contact box */
+.contact-box {
+    background-color: var(--primary-green);
+    color: var(--light-color);
+    text-align: center;
+}
+
+.contact-box a {
+    color: #eaffea;
+    text-decoration: underline;
+}
+
+.contact-box a:hover {
+    color: #ffffff;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .corporate-header h1 {
+        font-size: 28px;
+    }
+
+    .corporate-section h2 {
+        font-size: 20px;
+    }
+}
+
+.contact-box p {
+    color: var(--light-color) !important;
+}
+
+.contact-box h2 {
+    color: var(--background-color) !important;
+}

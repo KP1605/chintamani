@@ -6,6 +6,7 @@ import Products from './pages/Products';
 import Awards from './pages/Awards';
 import Associates from './pages/Associates';
 import Career from './pages/Career';
+import CorporateCommunication from './pages/CorporateCommunication';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/awards" element={<Awards />} />
         <Route path="/associates" element={<Associates />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/corporate-communication" element={<CorporateCommunication />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         {/* add others as needed */}
