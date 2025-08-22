@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router basename="/chintamani">
+    <Router>
       <Navbar />
 
       <Routes>
