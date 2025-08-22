@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chintamani/static/css/main.5545516f.css",
-    "main.js": "/chintamani/static/js/main.e0325bfc.js",
+    "main.js": "/chintamani/static/js/main.960a1834.js",
     "static/js/453.da44ed25.chunk.js": "/chintamani/static/js/453.da44ed25.chunk.js",
     "static/media/fa-solid-900.ttf": "/chintamani/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/chintamani/static/media/fa-brands-400.1815e00441357e01619e.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/chintamani/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/chintamani/index.html",
     "main.5545516f.css.map": "/chintamani/static/css/main.5545516f.css.map",
-    "main.e0325bfc.js.map": "/chintamani/static/js/main.e0325bfc.js.map",
+    "main.960a1834.js.map": "/chintamani/static/js/main.960a1834.js.map",
     "453.da44ed25.chunk.js.map": "/chintamani/static/js/453.da44ed25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5545516f.css",
-    "static/js/main.e0325bfc.js"
+    "static/js/main.960a1834.js"
   ]
 }
