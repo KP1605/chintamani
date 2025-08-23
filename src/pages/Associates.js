@@ -2,18 +2,18 @@ import React from 'react';
 import './Associates.css'; // for custom styles
 
 const associates = [
-    { name: 'GIFT City', logo: 'images/gift-city-logo.png' },
-    { name: 'RBI', logo: 'images/reserve-bank-of-india-logo.png' },
-    { name: 'HP', logo: 'images/hpcl-logo.png' },
-    { name: 'Indian Oil', logo: 'images/iocl-logo.png' },
-    { name: 'Cybage', logo: 'images/cybage-logo.jpg' },
-    { name: 'EIL', logo: 'images/eil-logo.jpg' },
-    { name: 'Northern Railway', logo: 'images/northern-railway.jpg' },
-    { name: 'Bharat Petroleum', logo: 'images/bharat-petroleum-logo.jpg' },
-    { name: 'BSNL', logo: 'images/bsnl-logo.png' },
-    { name: 'Indian Air Force', logo: 'images/indian-air-force-logo.png' },
-    { name: 'CPWD', logo: 'images/cpwd-logo.png' },
-    { name: 'Mazagon Dock', logo: 'images/mazagon_dock.png' },
+    { name: 'GIFT City', logo: `${process.env.PUBLIC_URL}/images/gift-city-logo.png` },
+    { name: 'RBI', logo: `${process.env.PUBLIC_URL}/images/reserve-bank-of-india-logo.png` },
+    { name: 'HP', logo: `${process.env.PUBLIC_URL}/images/hpcl-logo.png` },
+    { name: 'Indian Oil', logo: `${process.env.PUBLIC_URL}/images/iocl-logo.png` },
+    { name: 'Cybage', logo: `${process.env.PUBLIC_URL}/images/cybage-logo.jpg` },
+    { name: 'EIL', logo: `${process.env.PUBLIC_URL}/images/eil-logo.jpg` },
+    { name: 'Northern Railway', logo: `${process.env.PUBLIC_URL}/images/northern-railway.jpg` },
+    { name: 'Bharat Petroleum', logo: `${process.env.PUBLIC_URL}/images/bharat-petroleum-logo.jpg` },
+    { name: 'BSNL', logo: `${process.env.PUBLIC_URL}/images/bsnl-logo.png` },
+    { name: 'Indian Air Force', logo: `${process.env.PUBLIC_URL}/images/indian-air-force-logo.png` },
+    { name: 'CPWD', logo: `${process.env.PUBLIC_URL}/images/cpwd-logo.png` },
+    { name: 'Mazagon Dock', logo: `${process.env.PUBLIC_URL}/images/mazagon_dock.png` },
 ];
 
 function Associates() {
