@@ -60,7 +60,7 @@ const About = () => {
           <div className="approach-steps-horizontal">
             <div className="step">
               <div className="step-number">1</div>
-              <h3>UNDERSTATING OF PROJECT NEED</h3>
+              <h3>Understanding of Project Need</h3>
               <ul>
                 <li>Hybrid with State electricity</li>
                 <li>Hybrid with D.G. set / Wind power</li>
@@ -70,7 +70,7 @@ const About = () => {
             </div>
             <div className="step">
               <div className="step-number">2</div>
-              <h3>SITE SURVEY</h3>
+              <h3>Site Survey</h3>
               <ul>
                 <li>Sun Direction</li>
                 <li>Obstacles</li>
@@ -83,7 +83,7 @@ const About = () => {
             </div>
             <div className="step">
               <div className="step-number">3</div>
-              <h3>SYSTEM DESIGN</h3>
+              <h3>System Design</h3>
               <ul>
                 <li>Power O/P design</li>
                 <li>Battery Design</li>
@@ -95,7 +95,7 @@ const About = () => {
             </div>
             <div className="step">
               <div className="step-number">4</div>
-              <h3>IMPLEMENTATION</h3>
+              <h3>Implementation</h3>
               <ul>
                 <li>Existing structure preparation and modification</li>
                 <li>Panel structure installation </li>
@@ -111,9 +111,9 @@ const About = () => {
             </div>
             <div className="step">
               <div className="step-number">5</div>
-              <h3>SERVICE AND WARRANTY</h3>
+              <h3>Service and Warranty</h3>
               <ul>
-                <li>7-10 days complete training on operation & Mainainance </li>
+                <li>7-10 days complete training on operation & Maintenance </li>
                 <li>Every three months on site monitoring and service for 1 year</li>
                 <li>25 years Solar Panel Performance warranty </li>
                 <li>Online – Offline customer support team</li>

@@ -1,46 +1,43 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './CounterSection.css';
 
-function CounterSection() {
+function Counter({ icon, target, text }) {
+  const [count, setCount] = useState(0);
+
   useEffect(() => {
-    const counters = document.querySelectorAll('.counter-number');
-    const speed = 200;
+    let start = 0;
+    const speed = 200; // higher = slower
+    const increment = Math.ceil(target / speed);
 
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-count');
-        const count = +counter.innerText;
-        const increment = Math.ceil(target / speed);
+    const updateCounter = () => {
+      start += increment;
+      if (start < target) {
+        setCount(start);
+        requestAnimationFrame(updateCounter);
+      } else {
+        setCount(target);
+      }
+    };
 
-        if (count < target) {
-          counter.innerText = count + increment;
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  }, []);
+    updateCounter();
+  }, [target]);
 
+  return (
+    <div className="counter-box">
+      <i className={`fa ${icon} counter-icon`}></i>
+      <h3 className="counter-number">{count}</h3>
+      <p>{text}</p>
+    </div>
+  );
+}
+
+function CounterSection() {
   return (
     <section className="counter-section">
       <div className="counter-container">
-        <div className="counter-box">
-          <i className="fa fa-solar-panel counter-icon"></i>
-          <h3 className="counter-number" data-count="720">0</h3>
-          <p>Number of installations</p>
-        </div>
-        <div className="counter-box">
-          <i className="fa fa-leaf counter-icon"></i>
-          <h3 className="counter-number" data-count="12">0</h3>
-          <p>Number of sites</p>
-        </div>
-        <div className="counter-box">
-          <i className="fa fa-globe counter-icon"></i>
-          <h3 className="counter-number" data-count="12">0</h3>
-          <p>Mega Watts</p>
-        </div>
+        <Counter icon="fa-solar-panel" target={720} text="Number of installations" />
+        <Counter icon="fa-leaf" target={12} text="Number of sites" />
+        <Counter icon="fa-globe" target={12} text="Mega Watts" />
       </div>
     </section>
   );

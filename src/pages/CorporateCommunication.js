@@ -42,9 +42,12 @@ function CorporateCommunication() {
 
             <section className="corporate-section contact-box">
                 <h2>Contact Our Communication Team</h2>
-                <p>Address: 415, Solaris Business Hub, Sola Road, Ahmedabad-380063</p>
-                <p>Email us at: <a href="mailto:pr@chintamanigroup.com">chintamanitrd@gmail.com</a></p>
-                <p>Phone: +91-12345-67890</p>
+                <address>
+                    415, Solaris Business Hub, Sola Road, Ahmedabad-380063<br />
+                    Email: <a href="mailto:pr@chintamanigroup.com">chintamanitrd@gmail.com</a><br />
+                    Phone: +91-12345-67890
+                </address>
+
             </section>
         </div>
     );

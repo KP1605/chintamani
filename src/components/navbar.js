@@ -1,37 +1,38 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 function Navbar() {
     return (
-        <div class="navbar">
-            <a href="/" class="navbar-brand">
+        <div className="navbar">
+            <Link to="/" className="navbar-brand">
                 <img src="images/logo(1).jpeg" alt="Chintamani Logo" />
-            </a>
-            <div class="navbar-right">
-                <a href="/about" class="navbar-btn">About Us</a>
-                <a href="/products" class="navbar-btn">Products</a>
-                <a href="/awards" class="navbar-btn">Awards</a>
-                <a href="/associates" class="navbar-btn">Associates</a>
+            </Link>
+            <div className="navbar-right">
+                <Link to="/about" className="navbar-btn">About Us</Link>
+                <Link to="/products" className="navbar-btn">Products</Link>
+                <Link to="/awards" className="navbar-btn">Awards</Link>
+                <Link to="/associates" className="navbar-btn">Associates</Link>
 
-                <div class="dropdown">
-                    <a href="/contact" class="navbar-btn">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="/career">Career</a>
-                        <a href="/corporate-communication">Corporate Communication</a>
+                <div className="dropdown">
+                    <Link to="/contact" className="navbar-btn">Contact</Link>
+                    <div className="dropdown-content">
+                        <Link to="/career">Career</Link>
+                        <Link to="/corporate-communication">Corporate Communication</Link>
                     </div>
                 </div>
 
-                <div class="dropdown">
-                    <button class="menu-btn">☰</button>
-                    <div class="dropdown-content">
-                        <a href="/">Home</a>
-                        <a href="/products">Offerings</a>
-                        <a href="/projects">Key Projects</a>
-                        <a href="/contact">Contact</a>
+                <div className="dropdown">
+                    <button className="menu-btn">☰</button>
+                    <div className="dropdown-content">
+                        <Link to="/">Home</Link>
+                        <Link to="/products">Offerings</Link>
+                        <Link to="/projects">Key Projects</Link>
+                        <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-export default Navbar
+export default Navbar;
