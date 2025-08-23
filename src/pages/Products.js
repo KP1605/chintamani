@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { Link } from "react-scroll";
 import './Products.css';
 
 const Products = () => {
@@ -9,10 +10,26 @@ const Products = () => {
             <aside className="sidebar">
                 <h1>Products</h1>
                 <ul id="product-nav">
-                    <li><a href="#ht-infra"><i className="fas fa-bolt"></i> HT Infrastructures</a></li>
-                    <li><a href="#epc-project"><i className="fas fa-project-diagram"></i> EPC Project</a></li>
-                    <li><a href="#operation-maintenance"><i className="fas fa-tools"></i> Operation & Maintenance</a></li>
-                    <li><a href="#facade-solutions"><i className="fas fa-lightbulb"></i> FACADE Solutions</a></li>
+                    <li>
+                        <Link to="ht-infra" smooth={true} duration={500}>
+                            <i className="fas fa-bolt"></i> HT Infrastructures
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="epc-project" smooth={true} duration={500}>
+                            <i className="fas fa-project-diagram"></i> EPC Project
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="operation-maintenance" smooth={true} duration={500}>
+                            <i className="fas fa-tools"></i> Operation & Maintenance
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="facade-solutions" smooth={true} duration={500}>
+                            <i className="fas fa-lightbulb"></i> FACADE Solutions
+                        </Link>
+                    </li>
                 </ul>
             </aside>
 

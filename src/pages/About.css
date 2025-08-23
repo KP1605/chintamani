@@ -1,4 +1,4 @@
-/* .about-wrapper {
+.about-wrapper {
   padding: 60px 30px;
   margin: 80px auto;
 }
@@ -48,7 +48,7 @@
   font-size: 10px;
 }*/
 
-/*.approach-section li::before {
+.approach-section li::before {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
   font-weight: 900;
@@ -188,159 +188,5 @@
   .about-content,
   .about-image {
     max-width: 100%;
-  }
-}
-
-*/
-.about-wrapper {
-  padding: 60px 20px;
-  /* reduced side padding for better mobile fit */
-  margin: 80px auto;
-}
-
-.about-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* vertically center content */
-  flex-wrap: wrap;
-  width: 95%;
-  margin: 30px auto;
-  gap: 30px;
-  /* add space between columns */
-}
-
-.about-content {
-  flex: 1 1 55%;
-  max-width: 55%;
-}
-
-.about-content h1,
-.about-content h2 {
-  color: var(--dark);
-  margin-top: 30px;
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  font-family: "Poiret One";
-  font-weight: 700;
-}
-
-.about-content p,
-.about-content ul {
-  color: #333;
-  line-height: 1.7;
-  /* slightly increased for readability */
-  text-align: justify;
-}
-
-.about-content ul {
-  padding-left: 20px;
-}
-
-.about-content li,
-.approach-section li {
-  position: relative;
-  padding-left: 25px;
-  /* extra space for icons */
-  list-style: none;
-  margin-bottom: 12px;
-}
-
-.about-image {
-  flex: 1 1 40%;
-  max-width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  width: 100%;
-  /* fit container */
-  max-width: 85%;
-  height: auto;
-  /* responsive height */
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-}
-
-.core-competencies,
-.approach-section {
-  margin: 30px auto;
-  width: 85%;
-  border-radius: 30px;
-  padding: 20px;
-  /* uniform padding */
-}
-
-.core-competencies h2,
-.approach-section h2 {
-  text-align: center;
-  color: var(--dark);
-  font-size: 2.2rem;
-  /* slightly smaller for better fit */
-  margin-top: 50px;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.competency-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-}
-
-.competency-cards .card {
-  flex: 1 1 280px;
-  padding: 20px;
-  text-align: center;
-}
-
-.competency-cards .card h3 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-.approach-steps-horizontal {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 20px;
-  padding-bottom: 10px;
-  justify-content: flex-start;
-}
-
-.step {
-  width: 280px;
-  padding: 20px;
-  text-align: center;
-}
-
-.step-number {
-  margin-bottom: 15px;
-}
-
-@media (max-width: 992px) {
-  .about-main {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .about-content,
-  .about-image {
-    max-width: 100%;
-  }
-
-  .competency-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .approach-steps-horizontal {
-    justify-content: center;
   }
 }

@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <Link to="/" className="navbar-brand">
-                <img src="images/logo(1).jpeg" alt="Chintamani Logo" />
+                <img src={`${process.env.PUBLIC_URL}/images/logo(1).jpeg`} alt="Chintamani Logo" />
             </Link>
             <div className="navbar-right">
                 <Link to="/about" className="navbar-btn">About Us</Link>
