@@ -26,7 +26,7 @@ const About = () => {
             </ul>
           </div>
           <div className="about-image">
-            <img src="/images/ourjourney.png" alt="Our Journey Timeline" />
+            <img src={`${process.env.PUBLIC_URL}/images/ourjourney.png`} alt="Our Journey Timeline" />
           </div>
         </div>
 

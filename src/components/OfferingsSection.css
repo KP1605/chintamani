@@ -1,4 +1,4 @@
-.offerings-section {
+/* .offerings-section {
     padding: 80px 20px;
     text-align: center;
     width: 95%;
@@ -22,7 +22,7 @@
     margin-bottom: 40px;
 }
 
-/* Slider */
+
 .offerings-slider {
     overflow: hidden;
     max-width: 93%;
@@ -34,9 +34,7 @@
     display: flex;
     transition: transform 0.5s ease;
     flex-wrap: nowrap;
-    /* Allow cards to move to next line if needed */
     justify-content: center;
-    /* Center the group horizontally */
     overflow-x: auto;
     padding-bottom: 10px;
 }
@@ -47,13 +45,8 @@
 
 .cards-container {
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
 }
-
-
-/* Individual card */
 .offering-card {
     display: flex;
     flex-direction: column;
@@ -104,4 +97,114 @@
     background-color: #006400;
     transform: translateY(-2px);
     color: antiquewhite;
+}
+
+*/
+
+/* Offerings Section */
+.offerings-section {
+    width: 90%;
+    max-width: 1200px;
+    /* keep section centered */
+    margin: 50px auto;
+    text-align: center;
+    /* center all content */
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.offerings-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows items to wrap on smaller screens */
+    justify-content: center;
+    /* center horizontally */
+    gap: 30px;
+    /* spacing between offerings */
+}
+
+.offering-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center icon/text inside box */
+    justify-content: flex-start;
+    width: 250px;
+    /* consistent box width */
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.offering-box:hover {
+    transform: scale(1.05);
+}
+
+.offering-icon {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offering-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.offering-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .offering-box {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .offering-title {
+        font-size: 1.3rem;
+    }
+
+    .offering-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offerings-container {
+        gap: 20px;
+    }
+
+    .offering-box {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .offering-title {
+        font-size: 1.2rem;
+    }
+
+    .offering-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .offering-box {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .offering-title {
+        font-size: 1rem;
+    }
+
+    .offering-description {
+        font-size: 0.85rem;
+    }
 }

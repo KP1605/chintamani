@@ -1,4 +1,4 @@
-.navbar a,
+/* .navbar a,
 .navbar button,
 .dropdown-content a {
     min-height: 44px;
@@ -7,7 +7,7 @@
 }
 
 
-/* Navbar Styling */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@
     text-decoration: underline;
 }
 
-/* Logo Styling */
+
 .navbar-brand img {
     height: 90px;
     width: 170px;
@@ -53,7 +53,6 @@
 }
 
 
-/* Scroll Effect */
 .navbar.scrolled {
     background-color: #ffffff;
 }
@@ -63,7 +62,7 @@
     color: white;
 }
 
-/* Navbar Right Section */
+
 .navbar-right {
     display: flex;
     align-items: center;
@@ -75,7 +74,7 @@
     margin-left: 15px;
 }
 
-/* Dropdown Styles */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -119,4 +118,82 @@
     z-index: 1100;
     position: absolute;
 
+}
+
+*/
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    /* vertically center items */
+    justify-content: space-between;
+    /* space between logo and nav items */
+    background-color: white;
+    padding: 10px 50px;
+    /* reduced padding to remove extra top space */
+    color: rgb(0, 34, 66);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Links and buttons inside navbar */
+.navbar a,
+.navbar button {
+    background: none;
+    border: none;
+    color: rgb(15, 10, 66);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 15px;
+    /* smaller padding for vertical alignment */
+    line-height: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Logo */
+.navbar-brand img {
+    height: 60px;
+    /* adjust logo size for alignment */
+    width: auto;
+}
+
+/* Navbar Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    overflow: hidden;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile/Menu button */
+.menu-btn {
+    background-color: transparent;
+    color: #0b032b;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 1100;
+    position: relative;
+    /* change from absolute */
 }

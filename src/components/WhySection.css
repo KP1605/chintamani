@@ -1,4 +1,4 @@
-.why-section {
+/* .why-section {
   padding: 60px 20px;
   background: #f9f9f9;
   text-align: center;
@@ -53,5 +53,112 @@
 
   100% {
     transform: rotate(360deg);
+  }
+} */
+/* Why Section */
+.why-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+  /* center all headings and content */
+}
+
+/* Section Heading */
+.why-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  /* give spacing below heading */
+}
+
+/* Light font weight */
+.light {
+  font-weight: 300;
+}
+
+/* Highlight text */
+.highlight {
+  font-weight: 700;
+}
+
+/* Grid Container */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  /* center each card horizontally */
+  align-items: start;
+  /* align cards to top of grid cells */
+}
+
+/* Individual Card */
+.why-card {
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(2, 2, 2, 0.116);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* center content inside card */
+  justify-content: flex-start;
+}
+
+/* Hover Effect */
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Heading */
+.why-card h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 10px;
+  /* spacing below title */
+}
+
+/* Keyframe (keep as-is) */
+@keyframes spinBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .why-section h1 {
+    font-size: 2rem;
+  }
+
+  .why-card {
+    padding: 25px 15px;
+  }
+
+  .why-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .why-card {
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  .why-card h3 {
+    font-size: 1.1rem;
   }
 }
