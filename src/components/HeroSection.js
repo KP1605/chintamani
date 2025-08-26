@@ -5,7 +5,7 @@ function HeroSection() {
     return (
         <div className="hero-section">
             <video autoPlay muted loop playsInline className="hero-video">
-                <source src="/videos/solar.mp4" type="video/mp4" />
+                <source src={`${process.env.PUBLIC_URL}/videos/solar.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 

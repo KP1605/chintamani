@@ -91,3 +91,73 @@
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+
+/* ---------------- RESPONSIVE STYLES ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .contact-container {
+        padding: 40px 20px;
+        margin: 60px auto;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-grid {
+        gap: 25px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 30px 15px;
+        margin: 40px auto;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 20px;
+    }
+}
