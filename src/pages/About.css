@@ -1,5 +1,5 @@
 .about-wrapper {
-  padding: 60px 30px;
+  padding: 10px 30px;
   margin: 80px auto;
 }
 
@@ -67,7 +67,7 @@
 
 .about-image img {
   width: 85%;
-  height: 750px;
+  height: 850px;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -194,6 +194,7 @@
 
 /* Further adjustments for very small screens */
 @media (max-width: 576px) {
+
   .about-content h1,
   .about-content h2 {
     font-size: 1.6rem;
