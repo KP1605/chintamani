@@ -36,9 +36,9 @@
 /* Sidebar */
 .sidebar {
   width: 270px;
-  background: linear-gradient(160deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(165deg, var(--primary-color), var(--secondary-color));
   color: var(--light-color);
-  padding: 5px 10px;
+  padding: 10px 15px;
   box-shadow: var(--shadow-light);
   position: sticky;
   top: 92px;
@@ -69,6 +69,7 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: 700;
+  color: var(--light-color);
 }
 
 /* Sidebar Navigation */
