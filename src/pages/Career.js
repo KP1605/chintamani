@@ -110,18 +110,18 @@ function Career() {
                             <p><strong>Type:</strong> {job.type}</p>
                             {/*<p><strong>Skills:</strong> {job.skills.join(', ')}</p>*/}
                             <button
-                                className="apply-btn"
-                                onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-                            >
-                                Apply Now
-                            </button>
+    className="apply-btn"
+    onClick={() => document.getElementById("application-form").scrollIntoView({ behavior: "smooth" })}
+>
+    Apply Now
+</button>
                         </div>
                     ))}
                 </div>
             </section>
 
             {/* ---- Application Form Section ---- */}
-            <section className="application-form-section">
+            <section className="application-form-section" id='application-form'>
                 <h2>Apply to Join Our Talent Pool</h2>
                 <form className="application-form" onSubmit={handleSubmit}>
                     <div className="form-group floating-label">
