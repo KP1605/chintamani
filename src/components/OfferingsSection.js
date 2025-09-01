@@ -14,7 +14,7 @@ const OfferingsSection = () => {
             <li>CSS</li>
             <li>Transformer</li>
           </ul>
-          <Link to="/products" className="view-more-btn">View More</Link>
+          <Link to="/products" className="view-more-btn" onClick={() => window.scrollTo(0, 0)}>View More</Link>
         </div>
         <div className="offering-card">
           <h5>EPC Project</h5>
@@ -23,7 +23,7 @@ const OfferingsSection = () => {
             <li>Substation up to 66KW</li>
             <li>Transmission Line</li>
           </ul>
-          <Link to="/products" className="view-more-btn">View More</Link>
+          <Link to="/products" className="view-more-btn" onClick={() => window.scrollTo(0, 0)}>View More</Link>
         </div>
         <div className="offering-card">
           <h5>Operation & Maintenance</h5>
@@ -32,7 +32,7 @@ const OfferingsSection = () => {
             <li>LT Infrastructures</li>
             <li>RE Power Projects</li>
           </ul>
-          <Link to="/products" className="view-more-btn">View More</Link>
+          <Link to="/products" className="view-more-btn" onClick={() => window.scrollTo(0, 0)}>View More</Link>
         </div>
         <div className="offering-card">
           <h5>FACADE Solutions</h5>
@@ -42,7 +42,7 @@ const OfferingsSection = () => {
             <li>Solar Glass Roof</li>
             <li>FACADE Lighting</li>
           </ul>
-          <Link to="/products" className="view-more-btn">View More</Link>
+          <Link to="/products" className="view-more-btn" onClick={() => window.scrollTo(0, 0)}>View More</Link>
         </div>
       </div>
     </section>

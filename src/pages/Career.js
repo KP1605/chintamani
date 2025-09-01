@@ -37,8 +37,47 @@ function Career() {
         <div className="career-page">
             <header className="career-header">
                 <h1>Join Our Team</h1>
-                <p>Explore career opportunities with Chintamani and help us shape the future.</p>
+                <p>
+                    Join Our Team and Help Shape the Future
+                </p>
             </header>
+
+            <section className="career-content">
+                <p>
+                    At <strong>CPIPL</strong>, we believe our people are our greatest strength.
+                    We're building a culture of innovation, collaboration, and excellence — and we’re
+                    always looking for talented individuals who share our passion and purpose.
+                </p>
+                <p>
+                    Whether you're an experienced professional or just starting your career,
+                    you'll find opportunities to grow, contribute, and make an impact.
+                </p>
+
+                <h2>Why Work With Us?</h2>
+                <ul>
+                    <li>
+                        <strong>Innovative Environment:</strong> Work with the latest technologies and
+                        be part of forward-thinking projects that create real change.
+                    </li>
+                    <li>
+                        <strong>Growth & Development:</strong> We invest in our people through training,
+                        mentorship, and clear career paths.
+                    </li>
+                    <li>
+                        <strong>Inclusive Culture:</strong> We value diversity and foster an open, respectful,
+                        and supportive workplace.
+                    </li>
+                    <li>
+                        <strong>Meaningful Work:</strong> Make a difference by contributing to projects
+                        that enhance communities and improve lives.
+                    </li>
+                    <li>
+                        <strong>Employee Benefits:</strong> Competitive compensation, health and wellness
+                        programs, and work-life balance initiatives.
+                    </li>
+                </ul>
+            </section>
+
 
             {/* ---- Current Openings Section ---- */}
             <section className="openings-section">
@@ -46,19 +85,19 @@ function Career() {
                 <div className="openings-container">
                     {[
                         {
-                            title: "Purchase Executive",
+                            title: "Project Management",
                             location: "Ahmedabad",
                             experience: "2+ years",
                             type: "Full Time"
                         },
                         {
-                            title: "Accountant",
+                            title: "Sales & Business Development ",
                             location: "Ahmedabad",
                             experience: "3+ years",
                             type: "Full Time"
                         },
                         {
-                            title: "Finance Head",
+                            title: "Operations & Maintenance Manager",
                             location: "Remote",
                             experience: "1+ years",
                             type: "Contract"

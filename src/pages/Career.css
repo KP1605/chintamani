@@ -43,6 +43,62 @@
     font-size: 1.2rem;
 }
 
+/* --- Career Intro Section --- */
+.career-content {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    line-height: 1.8;
+    color: var(--text-soft);
+}
+
+.career-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+}
+
+.career-content h2 {
+    margin: 40px 0 25px;
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+/* Why Work With Us List (Cards) */
+.career-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.benefit-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    line-height: 1.6;
+}
+
 /* --- Current Openings --- */
 .openings-section {
     margin-bottom: 50px;
@@ -236,11 +292,17 @@
     .career-header h1 {
         font-size: 2.4rem;
     }
+
     .career-header p {
         font-size: 1rem;
     }
+
     .career-card {
         width: 45%;
+    }
+
+    .career-content h2 {
+        font-size: 1.6rem;
     }
 }
 
@@ -249,17 +311,29 @@
     .career-card {
         width: 100%;
     }
+
     .application-form-section {
         padding: 20px;
     }
+
     .career-header h1 {
         font-size: 2rem;
     }
+
     .career-header p {
         font-size: 0.95rem;
     }
+
     .section-title {
         font-size: 1.6rem;
+    }
+
+    .career-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 20px;
     }
 }
 
@@ -268,17 +342,37 @@
     .career-header h1 {
         font-size: 1.6rem;
     }
+
     .career-header p {
         font-size: 0.85rem;
     }
+
     .career-card {
         padding: 20px;
     }
+
     .apply-btn {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
+
     .application-form-section {
         padding: 15px;
+    }
+
+    .career-content {
+        padding: 0 10px;
+    }
+
+    .career-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.05rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.9rem;
     }
 }
