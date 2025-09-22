@@ -10,8 +10,7 @@ function Career() {
         message: ''
     });
 
-    const [submitting, setSubmitting] = useState(false); // ✅ Add this line
-
+    const [submitting, setSubmitting] = useState(false);
 
     const handleChange = (e) => {
         const { name, value, files } = e.target;
@@ -21,25 +20,48 @@ function Career() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitting(true);
-        setTimeout(() => {
-            console.log(formData);
-            alert("Form submitted! Thank you for applying.");
-            setSubmitting(false);
-            setFormData({ name: '', email: '', phone: '', resume: null, message: '' });
-        }, 2000); // simulate API delay
-    };
 
+        try {
+            const data = new FormData();
+            data.append("name", formData.name);
+            data.append("email", formData.email);
+            data.append("phone", formData.phone);
+            data.append("resume", formData.resume);
+            data.append("message", formData.message);
+
+            const response = await fetch("http://127.0.0.1:8000/career/submit-application/", {
+                method: "POST",
+                body: data
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                alert("Application submitted successfully!");
+                console.log(result);
+
+                // reset form
+                setFormData({ name: '', email: '', phone: '', resume: null, message: '' });
+            } else {
+                const errorData = await response.json();
+                console.error("Error:", errorData);
+                alert("Failed to submit application. Please check your details.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Something went wrong. Try again later.");
+        } finally {
+            setSubmitting(false);
+        }
+    };
 
     return (
         <div className="career-page">
             <header className="career-header">
                 <h1>Join Our Team</h1>
-                <p>
-                    Join Our Team and Help Shape the Future
-                </p>
+                <p>Join Our Team and Help Shape the Future</p>
             </header>
 
             <section className="career-content">
@@ -55,29 +77,13 @@ function Career() {
 
                 <h2>Why Work With Us?</h2>
                 <ul>
-                    <li>
-                        <strong>Innovative Environment:</strong> Work with the latest technologies and
-                        be part of forward-thinking projects that create real change.
-                    </li>
-                    <li>
-                        <strong>Growth & Development:</strong> We invest in our people through training,
-                        mentorship, and clear career paths.
-                    </li>
-                    <li>
-                        <strong>Inclusive Culture:</strong> We value diversity and foster an open, respectful,
-                        and supportive workplace.
-                    </li>
-                    <li>
-                        <strong>Meaningful Work:</strong> Make a difference by contributing to projects
-                        that enhance communities and improve lives.
-                    </li>
-                    <li>
-                        <strong>Employee Benefits:</strong> Competitive compensation, health and wellness
-                        programs, and work-life balance initiatives.
-                    </li>
+                    <li><strong>Innovative Environment:</strong> Work with the latest technologies and forward-thinking projects.</li>
+                    <li><strong>Growth & Development:</strong> We invest in our people with training and mentorship.</li>
+                    <li><strong>Inclusive Culture:</strong> We value diversity and foster an open, respectful workplace.</li>
+                    <li><strong>Meaningful Work:</strong> Contribute to projects that enhance communities and improve lives.</li>
+                    <li><strong>Employee Benefits:</strong> Competitive compensation, wellness programs, and work-life balance.</li>
                 </ul>
             </section>
-
 
             {/* ---- Current Openings Section ---- */}
             <section className="openings-section">
@@ -88,19 +94,22 @@ function Career() {
                             title: "Project Management",
                             location: "Ahmedabad",
                             experience: "2+ years",
-                            type: "Full Time"
+                            type: "Full Time",
+                            description: "Responsible for planning, executing, and closing projects. Must coordinate across teams and manage resources."
                         },
                         {
-                            title: "Sales & Business Development ",
+                            title: "Sales & Business Development",
                             location: "Ahmedabad",
                             experience: "3+ years",
-                            type: "Full Time"
+                            type: "Full Time",
+                            description: "Identify new business opportunities, build client relationships, and achieve sales targets."
                         },
                         {
                             title: "Operations & Maintenance Manager",
                             location: "Remote",
                             experience: "1+ years",
-                            type: "Contract"
+                            type: "Contract",
+                            description: "Oversee daily operations and ensure systems are maintained efficiently."
                         }
                     ].map((job, index) => (
                         <div className="career-card" key={index}>
@@ -108,20 +117,23 @@ function Career() {
                             <p><strong>Location:</strong> {job.location}</p>
                             <p><strong>Experience:</strong> {job.experience}</p>
                             <p><strong>Type:</strong> {job.type}</p>
-                            {/*<p><strong>Skills:</strong> {job.skills.join(', ')}</p>*/}
+                            <p><strong>Job Description:</strong> {job.description}</p>
+
                             <button
-    className="apply-btn"
-    onClick={() => document.getElementById("application-form").scrollIntoView({ behavior: "smooth" })}
->
-    Apply Now
-</button>
+                                className="apply-btn"
+                                onClick={() =>
+                                    document.getElementById("application-form").scrollIntoView({ behavior: "smooth" })
+                                }
+                            >
+                                Apply Now
+                            </button>
                         </div>
                     ))}
                 </div>
             </section>
 
             {/* ---- Application Form Section ---- */}
-            <section className="application-form-section" id='application-form'>
+            <section className="application-form-section" id="application-form">
                 <h2>Apply to Join Our Talent Pool</h2>
                 <form className="application-form" onSubmit={handleSubmit}>
                     <div className="form-group floating-label">

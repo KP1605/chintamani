@@ -44,7 +44,7 @@
   top: 92px;
   left: 10px;
   height: auto;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Gradient border only on the right side with curve
@@ -149,6 +149,7 @@
 .product-section:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .product-section h2 {
@@ -245,23 +246,31 @@
     font-size: 1.4rem;
   }
 }
+
 /* Bullet list with Font Awesome icons */
 .product-section ul li {
-  list-style: none; /* remove default bullet */
+  list-style: none;
+  /* remove default bullet */
   position: relative;
   margin-bottom: 15px;
   line-height: 1.6;
   display: flex;
-  align-items: flex-start; /* aligns icon with text start */
+  align-items: flex-start;
+  /* aligns icon with text start */
 }
 
 /* Font Awesome icon styling */
 .product-section ul li i {
-  color: var(--primary-green); /* green tick color */
-  font-size: 1.1rem; /* uniform size */
-  margin-right: 10px; /* spacing between icon and text */
-  margin-top: 4px; /* small adjustment for vertical alignment */
-  flex-shrink: 0; /* prevents icon from shrinking */
+  color: var(--primary-green);
+  /* green tick color */
+  font-size: 1.1rem;
+  /* uniform size */
+  margin-right: 10px;
+  /* spacing between icon and text */
+  margin-top: 4px;
+  /* small adjustment for vertical alignment */
+  flex-shrink: 0;
+  /* prevents icon from shrinking */
 }
 
 /* Strong heading inside li */
@@ -269,4 +278,3 @@
   margin-right: 5px;
   color: var(--secondary-color);
 }
-
