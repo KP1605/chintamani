@@ -88,19 +88,25 @@ function Career() {
                             title: "Project Management",
                             location: "Ahmedabad",
                             experience: "2+ years",
-                            type: "Full Time"
+                            type: "Full Time",
+                            description:
+                                "Responsible for planning, executing, and closing projects. Must coordinate across teams, manage resources, and ensure timely delivery of projects."
                         },
                         {
-                            title: "Sales & Business Development ",
+                            title: "Sales & Business Development",
                             location: "Ahmedabad",
                             experience: "3+ years",
-                            type: "Full Time"
+                            type: "Full Time",
+                            description:
+                                "Identify new business opportunities, build client relationships, and achieve sales targets. Strong communication and negotiation skills required."
                         },
                         {
                             title: "Operations & Maintenance Manager",
                             location: "Remote",
                             experience: "1+ years",
-                            type: "Contract"
+                            type: "Contract",
+                            description:
+                                "Oversee day-to-day operations and ensure systems are maintained efficiently. Responsible for monitoring, troubleshooting, and reporting."
                         }
                     ].map((job, index) => (
                         <div className="career-card" key={index}>
@@ -108,17 +114,23 @@ function Career() {
                             <p><strong>Location:</strong> {job.location}</p>
                             <p><strong>Experience:</strong> {job.experience}</p>
                             <p><strong>Type:</strong> {job.type}</p>
-                            {/*<p><strong>Skills:</strong> {job.skills.join(', ')}</p>*/}
+                            <p><strong>Job Description:</strong> {job.description}</p>
+
                             <button
-    className="apply-btn"
-    onClick={() => document.getElementById("application-form").scrollIntoView({ behavior: "smooth" })}
->
-    Apply Now
-</button>
+                                className="apply-btn"
+                                onClick={() =>
+                                    document
+                                        .getElementById("application-form")
+                                        .scrollIntoView({ behavior: "smooth" })
+                                }
+                            >
+                                Apply Now
+                            </button>
                         </div>
                     ))}
                 </div>
             </section>
+
 
             {/* ---- Application Form Section ---- */}
             <section className="application-form-section" id='application-form'>

@@ -10,9 +10,9 @@ const Products = () => {
             <aside className="sidebar">
                 <h1>Products</h1>
                 <ul id="product-nav">
-                    
+
                     <li>
-                        <Link to="epc-project" smooth={true} duration={500}> 
+                        <Link to="epc-project" smooth={true} duration={500}>
                             <i className="fas fa-project-diagram"></i> EPC Project
                         </Link>
                     </li>
@@ -27,27 +27,27 @@ const Products = () => {
                         </Link>
                     </li> */}
                     <li>
-                    <Link to="renewable-power" smooth={true} duration={500}>
-                        <i className="fas fa-solar-panel"></i> Renewable Power
-                    </Link>
+                        <Link to="renewable-power" smooth={true} duration={500}>
+                            <i className="fas fa-solar-panel"></i> Renewable Power
+                        </Link>
                     </li>
 
                     <li>
-                    <Link to="industrial-installations" smooth={true} duration={500}>
-                        <i className="fas fa-industry"></i> Industrial Electrical Installations
-                    </Link>
+                        <Link to="industrial-installations" smooth={true} duration={500}>
+                            <i className="fas fa-industry"></i> Industrial Electrical Installations
+                        </Link>
                     </li>
 
                     <li>
-                    <Link to="street-lightning" smooth={true} duration={500}>
-                        <i className="fas fa-lightbulb"></i> Street Lighting and Area Lighting
-                    </Link>
+                        <Link to="street-lightning" smooth={true} duration={500}>
+                            <i className="fas fa-lightbulb"></i> Street Lighting and Area Lighting
+                        </Link>
                     </li>
 
                     <li>
-                    <Link to="electrical-works" smooth={true} duration={500}>
-                        <i className="fas fa-building"></i> Building Electrical Works including Bus-ducts
-                    </Link>
+                        <Link to="electrical-works" smooth={true} duration={500}>
+                            <i className="fas fa-building"></i> Building Electrical Works including Bus-ducts
+                        </Link>
                     </li>
 
                 </ul>
@@ -55,7 +55,7 @@ const Products = () => {
 
             {/* Main Content */}
             <main className="main-content">
-                
+
 
                 <section id="epc-project" className="product-section">
                     <h2>EPC Project</h2>
@@ -115,7 +115,7 @@ const Products = () => {
                             stringent safety measures to protect our team and stakeholders.
                         </li>
                     </ol>
-                    
+
                     <h3>Offerings</h3>
                     <ul>
                         <li><i className="fas fa-check-circle"></i>High Voltage Systems</li>
@@ -276,7 +276,7 @@ const Products = () => {
                         <li><i className="fas fa-check-circle"></i>Job Creation</li>
                     </ul>
                 </section>
-                
+
                 <section id="industrial-installations" className="product-section">
                     <h2>Industrial Electrical Installations</h2>
                     <h3>Introduction</h3>
@@ -417,7 +417,7 @@ const Products = () => {
                             <strong>Low Current Systems:</strong>Electrical wiring and support for CCTV, access control, intercoms, BMS (Building Management Systems), and structured cabling.
                         </li>
                         <li>
-                            <strong>Energy Efficiency & Load Management:</strong>Smart solutions for energy monitoring, power factor correction, and efficient load distribution to reduce operational costs. 
+                            <strong>Energy Efficiency & Load Management:</strong>Smart solutions for energy monitoring, power factor correction, and efficient load distribution to reduce operational costs.
                         </li>
                     </ol>
                     <h3>Why Choose Us?</h3>

@@ -8,12 +8,12 @@ function Navbar() {
     return (
         <div className="navbar">
             <Link to="/" className="navbar-brand">
-                <img src={`${process.env.PUBLIC_URL}/images/logo(1).jpeg`} alt="Chintamani Logo" />
+                <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Chintamani Logo" />
             </Link>
-            
+
             {/* Menu Button (only visible on mobile via CSS) */}
-            <button 
-                className="menu-btn" 
+            <button
+                className="menu-btn"
                 onClick={() => setMenuOpen(!menuOpen)}
             >
                 ☰
@@ -22,10 +22,10 @@ function Navbar() {
             <div className={`navbar-right ${menuOpen ? "active" : ""}`}>
                 <Link to="/about" className="navbar-btn">About Us</Link>
                 <Link to="/products" className="navbar-btn">Products</Link>
-                {/* <Link to="/awards" className="navbar-btn">Awards</Link> */}
+                <Link to="/projects" className="navbar-btn">Projects</Link>
                 <Link to="/associates" className="navbar-btn">Associates</Link>
                 <Link to="/career" className="navbar-btn">Career</Link>
-                <Link to="/contact" className="navbar-btn">Contact</Link>       
+                <Link to="/contact" className="navbar-btn">Contact</Link>
 
                 {/* <div className="dropdown">
                     <Link to="/contact" className="navbar-btn">Contact</Link>
