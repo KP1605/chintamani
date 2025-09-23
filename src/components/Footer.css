@@ -1,0 +1,148 @@
+/* =========================
+   Footer Container
+========================= */
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 50px 20px 20px;
+    text-align: center;
+    border-top: 5px solid #006400;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* =========================
+   Footer Content
+========================= */
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-content p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* =========================
+   Social Icons
+========================= */
+.footer-socials {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #00ff7f;
+    transform: scale(1.1);
+}
+
+/* =========================
+   Footer Bottom
+========================= */
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Force all children to stay white */
+.footer,
+.footer * {
+    color: #fff !important;
+}
+
+/* =========================
+   Responsive Styles
+========================= */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .footer-content h3 {
+        font-size: 22px;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+    }
+
+    .footer-socials a {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 40px 15px 15px;
+    }
+
+    .footer-content h3 {
+        font-size: 20px;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .footer-socials {
+        gap: 10px;
+    }
+
+    .footer-socials a {
+        font-size: 17px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .footer-content h3 {
+        font-size: 18px;
+    }
+
+    .footer-content p {
+        font-size: 13px;
+    }
+
+    .footer-socials {
+        gap: 8px;
+    }
+
+    .footer-socials a {
+        font-size: 16px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}

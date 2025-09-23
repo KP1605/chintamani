@@ -1,0 +1,109 @@
+/* ================================
+   NAVBAR STYLES
+   ================================ */
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #ffffff; /* navbar background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Logo */
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Right side menu (default desktop view) */
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar-btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .navbar-btn:hover {
+    color: #007bff;
+  }
+  
+  /* Hamburger button */
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* ================================
+     MOBILE STYLES
+     ================================ */
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block; /* show hamburger */
+    }
+  
+    .navbar-right {
+      display: none; /* hide menu by default */
+      flex-direction: column;
+      position: absolute;
+      top: 65px; /* just below navbar */
+      right: 20px;
+      background: #ffffff;
+      width: 220px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  
+    .navbar-right.active {
+      display: flex; /* show when active */
+    }
+  
+    .navbar-btn {
+      width: 100%;
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      color: #333;
+    }
+  
+    .navbar-btn:last-child {
+      border-bottom: none;
+    }
+  
+    .navbar-btn:hover {
+      background: #f5f5f5;
+    }
+  }
+  
+  /* ================================
+     DESKTOP STYLES
+     ================================ */
+  @media (min-width: 769px) {
+    .navbar-right {
+      display: flex !important; /* always visible on desktop */
+      position: static;
+      flex-direction: row;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      width: auto;
+    }
+  }
+  

@@ -1,0 +1,118 @@
+.associates-page {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+    margin: 80px auto;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a8f2e;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  .associates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .associate-card {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .associate-logo {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .associate-name {
+    font-size: 16px;
+    color: #333;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ----------------- Responsive ----------------- */
+  
+  /* Tablets */
+  @media (max-width: 992px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .associate-card {
+      width: 140px;
+    }
+  
+    .associate-logo {
+      height: 160px;
+    }
+  }
+  
+  /* Mobiles */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 24px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  
+    .associates-grid {
+      gap: 20px;
+    }
+  
+    .associate-card {
+      width: 120px;
+    }
+  
+    .associate-logo {
+      height: 140px;
+    }
+  
+    .associate-name {
+      font-size: 14px;
+    }
+  }
+  
+  /* Small Mobiles */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px;
+    }
+  
+    .subtitle {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+  
+    .associate-card {
+      width: 100px;
+    }
+  
+    .associate-logo {
+      height: 100px;
+    }
+  
+    .associate-name {
+      font-size: 12px;
+    }
+  }
+  
