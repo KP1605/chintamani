@@ -1,0 +1,185 @@
+/* ============================
+   Google Fonts Import
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poiret+One&family=Roboto+Slab:wght@100..900&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+/* ============================
+   CSS Variables
+============================ */
+:root {
+  --primary-color: #060877;
+  --secondary-color: #095c25;
+  --light-color: #ffffff;
+  --background-color: #f8f9fa;
+  --dark-color: #333333;
+  --accent-color: #ff7f50;
+  --primary: #007bff;
+  --secondary: #2e2e2b;
+  --dark: #091E3E;
+  --primary-green: #1e6f5c;
+  --secondary-green: #43b28b;
+  --accent-color: #8ff0c1;
+  --text-dark: #184438;
+  --text-soft: #3a5f52;
+  --bg-light: #f5fcfb;
+  --card-bg: #ffffff;
+  --border-light: rgba(0, 0, 0, 0.05);
+  --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================
+   Global Reset & Base Styles
+============================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background-color: var(--background-color);
+  color: var(--dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*** Heading ***/
+h1,
+h2,
+.fw-bold {
+  font-weight: 900 !important;
+}
+
+h3,
+h4,
+.fw-semi-bold {
+  font-weight: 700 !important;
+}
+
+h5,
+h6,
+.fw-medium {
+  font-weight: 700;
+}
+
+/* Set all headings to Orbitron */
+h1,
+h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Set body text to Poppins */
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+p {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* Optional TOuch */
+body {
+  overflow-x: hidden;
+}
+
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Ensure hero section uses Orbitron */
+.hero-section h1 {
+  font-family: 'Orbitron', serif;
+  font-weight: 900;
+}
+
+/* ============================
+   Code Element Styles
+============================ */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ============================
+   Buttons (Optional example)
+============================ */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--light);
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px)
+  }
+
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg)
+  }
+
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  }
+
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  }
+
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
