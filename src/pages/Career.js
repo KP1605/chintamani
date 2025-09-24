@@ -95,7 +95,8 @@ function Career() {
                             location: "Ahmedabad",
                             experience: "2+ years",
                             type: "Full Time",
-                            description: "Responsible for planning, executing, and closing projects. Must coordinate across teams and manage resources."
+                            description:
+                                "Responsible for planning, executing, and closing projects. Must coordinate across teams, manage resources, and ensure timely delivery of projects."
                         },
                         {
                             title: "Sales & Business Development",
@@ -131,6 +132,7 @@ function Career() {
                     ))}
                 </div>
             </section>
+
 
             {/* ---- Application Form Section ---- */}
             <section className="application-form-section" id="application-form">
