@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chintamani/static/css/main.0f5322a8.css",
-    "main.js": "/chintamani/static/js/main.11fcc862.js",
+    "main.css": "/chintamani/static/css/main.b022e244.css",
+    "main.js": "/chintamani/static/js/main.1ce8eee2.js",
     "static/js/453.da44ed25.chunk.js": "/chintamani/static/js/453.da44ed25.chunk.js",
     "static/media/fa-solid-900.ttf": "/chintamani/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/chintamani/static/media/fa-brands-400.1815e00441357e01619e.ttf",
@@ -12,12 +12,12 @@
     "static/media/fa-v4compatibility.ttf": "/chintamani/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/chintamani/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/chintamani/index.html",
-    "main.0f5322a8.css.map": "/chintamani/static/css/main.0f5322a8.css.map",
-    "main.11fcc862.js.map": "/chintamani/static/js/main.11fcc862.js.map",
+    "main.b022e244.css.map": "/chintamani/static/css/main.b022e244.css.map",
+    "main.1ce8eee2.js.map": "/chintamani/static/js/main.1ce8eee2.js.map",
     "453.da44ed25.chunk.js.map": "/chintamani/static/js/453.da44ed25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f5322a8.css",
-    "static/js/main.11fcc862.js"
+    "static/css/main.b022e244.css",
+    "static/js/main.1ce8eee2.js"
   ]
 }
